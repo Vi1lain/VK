@@ -63,7 +63,7 @@ class Registration extends StatelessWidget {
 
 class AppBarVK extends StatelessWidget implements PreferredSizeWidget {
   @override
-  Size get preferredSize => const Size.fromHeight(100);
+  Size get preferredSize => const Size.fromHeight(40);
 
   const AppBarVK({
     super.key,
