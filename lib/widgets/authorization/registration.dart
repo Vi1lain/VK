@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vk/widgets/authorization/reg_login.dart';
 
 class Registration extends StatelessWidget {
   const Registration({Key? key}) : super(key: key);
@@ -43,7 +44,9 @@ class Registration extends StatelessWidget {
                     minimumSize:
                         MaterialStateProperty.all(Size(double.maxFinite, 53))),
                 onPressed: () {
-                  // ==================================
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return const RegLogin();
+                  }));
                 },
                 child: const Text(
                     style: TextStyle(color: Colors.white), "Продолжить")),
