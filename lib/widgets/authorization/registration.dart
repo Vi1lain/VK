@@ -115,7 +115,7 @@ class _textRegistrationState extends State<textRegistration> {
           TextFormField(
             initialValue: _number,
             maxLength: 16,
-            decoration: InputDecoration(
+            decoration: InputDecoration(contentPadding: EdgeInsets.zero,
                 hintText: "Введите номер телефона",
                 hintStyle: TextStyle(color: Colors.black26),
                 enabledBorder: OutlineInputBorder(

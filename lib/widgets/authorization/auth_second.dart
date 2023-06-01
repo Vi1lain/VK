@@ -112,7 +112,7 @@ class _textRegistrationState extends State<textRegistration> {
       child: Column(
         children: [
           TextField(
-            decoration: InputDecoration(
+            decoration: InputDecoration(contentPadding: EdgeInsets.zero,
                 hintText: "Телефон или почта",
                 hintStyle: TextStyle(color: Colors.black26),
                 enabledBorder: OutlineInputBorder(
