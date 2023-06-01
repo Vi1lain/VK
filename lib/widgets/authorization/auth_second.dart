@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'auth_login.dart';
+
 class AuthSecond extends StatelessWidget {
   const AuthSecond({Key? key}) : super(key: key);
 
@@ -42,8 +44,10 @@ class AuthSecond extends StatelessWidget {
                         MaterialStateProperty.all(Colors.blueAccent),
                     minimumSize:
                         MaterialStateProperty.all(Size(double.maxFinite, 53))),
-                onPressed: () {
-                  // ==================================
+                onPressed:() {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return const AuthPass();
+                  }));
                 },
                 child: const Text(
                     style: TextStyle(color: Colors.white), "Продолжить")),
