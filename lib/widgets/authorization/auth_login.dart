@@ -93,7 +93,7 @@ class _textRegistrationState extends State<textRegistration> {
       padding: const EdgeInsets.symmetric(vertical: 12),
       child: Column(
         children: [
-          TextField(
+          TextField(obscureText: true,
             decoration: InputDecoration(
                 contentPadding: EdgeInsets.zero,
                 hintText: "Введите пароль",
